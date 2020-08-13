@@ -1,0 +1,35 @@
+// Widget
+.widget {
+  margin-bottom: $xl-size;
+}
+
+.widget__message {
+  background: $off-white;
+  border-bottom: 1px solid lighten($light-blue, 10%);
+  color: $dark-blue;
+  margin: 0;
+  padding: $l-size;
+  text-align: center;
+}
+
+// Widget Header
+.widget-header {
+  background: $dark-blue;
+  color: $off-white;
+  display: flex;
+  justify-content: space-between;
+  padding: $m-size;
+}
+
+.widget-header .button--link {
+  color: $off-white;
+}
+
+.widget-header .button--link:disabled {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.widget-header__title {
+  margin: 0;
+}

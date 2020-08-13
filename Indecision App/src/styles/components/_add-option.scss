@@ -1,0 +1,40 @@
+// Add Option Error
+.add-option-error {
+  color: $dark-blue;
+  font-size: 2rem;
+  font-style: italic;
+  margin: $m-size 0;
+  padding: 0 $m-size;
+}
+
+// Add Option
+.add-option {
+  display: flex;
+  flex-direction: column;
+  padding: $m-size 0;
+  background: $light-blue;
+  label {
+    display: flex;
+    flex-grow: 1;
+  }
+}
+
+.add-option__input {
+  background: $off-white;
+  border: none;
+  color: $dark-blue;
+  border-bottom: 0.3rem solid darken($dark-blue, 10%);
+  flex-grow: 1;
+  margin: 0 0 $s-size 0;
+  padding: $s-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .add-option {
+    flex-direction: row;
+    padding: $xl-size 0;
+  }
+  .add-option__input {
+    margin: 0 $s-size 0 0;
+  }
+}
